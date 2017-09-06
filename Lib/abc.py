@@ -72,7 +72,7 @@ class ABCMeta(type):
     """Metaclass for defining Abstract Base Classes (ABCs).
 
     Use this metaclass to create an ABC.  An ABC can be subclassed
-    directly, and then acts as a mix-in class.  You can also register
+    directly, and then acts as a mix-in class[1].  You can also register
     unrelated concrete classes (even built-in classes) and unrelated
     ABCs as 'virtual subclasses' -- these and their descendants will
     be considered subclasses of the registering ABC by the built-in
@@ -81,6 +81,7 @@ class ABCMeta(type):
     implementations defined by the registering ABC be callable (not
     even via super()).
 
+    [1] https://stackoverflow.com/questions/533631/what-is-a-mixin-and-why-are-they-useful
     """
 
     # A global counter that is incremented each time a class is
