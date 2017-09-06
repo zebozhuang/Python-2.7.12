@@ -4,6 +4,9 @@
 extern "C" {
 #endif
 
+/*
+  Python字段的实现: 使用哈希算法, 将Key转换成一个哈希数字
+*/
 
 /* Dictionary object type -- mapping from hashable object to object */
 
@@ -122,7 +125,7 @@ PyAPI_FUNC(PyObject *) PyDict_Items(PyObject *mp);
 PyAPI_FUNC(Py_ssize_t) PyDict_Size(PyObject *mp);
 PyAPI_FUNC(PyObject *) PyDict_Copy(PyObject *mp);
 PyAPI_FUNC(int) PyDict_Contains(PyObject *mp, PyObject *key);
-PyAPI_FUNC(int) _PyDict_Contains(PyObject *mp, PyObject *key, lonƒg hash);
+PyAPI_FUNC(int) _PyDict_Contains(PyObject *mp, PyObject *key, long hash);
 PyAPI_FUNC(PyObject *) _PyDict_NewPresized(Py_ssize_t minused);
 PyAPI_FUNC(void) _PyDict_MaybeUntrack(PyObject *mp);
 
