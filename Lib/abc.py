@@ -59,6 +59,11 @@ class abstractproperty(property):
             def setx(self, value): ...
             x = abstractproperty(getx, setx)
     """
+    """
+        抽象属性工厂类，如果一个有metaclass的类，并且这个metaclass是从ABCMeta继承
+        而来，那么这个类必须实现所有的抽象属性才能够实例化, 被覆盖的抽象属性可以用super
+        调用
+    """
     __isabstractmethod__ = True
 
 
