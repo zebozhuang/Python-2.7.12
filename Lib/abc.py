@@ -1,3 +1,4 @@
+# coding: utf-8
 # Copyright 2007 Google, Inc. All Rights Reserved.
 # Licensed to PSF under a Contributor Agreement.
 
@@ -143,7 +144,6 @@ class ABCMeta(type):
         if subtype is _InstanceType:
             subtype = subclass
         if subtype is subclass or subclass is None:
-            print(".....")
             if (cls._abc_negative_cache_version ==
                 ABCMeta._abc_invalidation_counter and
                 subtype in cls._abc_negative_cache):
@@ -158,7 +158,6 @@ class ABCMeta(type):
         # Check cache
         if subclass in cls._abc_cache:
             return True
-        print("....2")
         # Check negative cache; may have to invalidate
         if cls._abc_negative_cache_version < ABCMeta._abc_invalidation_counter:
             # Invalidate the negative cache

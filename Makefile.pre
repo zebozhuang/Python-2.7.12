@@ -27,10 +27,10 @@ MODLIBS=        _MODLIBS_
 VERSION=	2.7
 srcdir=		.
 
-abs_srcdir=	/Users/zhuangzebo/Downloads/Python-2.7.12
-abs_builddir=	/Users/zhuangzebo/Downloads/Python-2.7.12
-build=		x86_64-apple-darwin16.1.0
-host=		x86_64-apple-darwin16.1.0
+abs_srcdir=	/Users/zhuangzebo/Documents/Python-2.7.12
+abs_builddir=	/Users/zhuangzebo/Documents/Python-2.7.12
+build=		x86_64-apple-darwin16.5.0
+host=		x86_64-apple-darwin16.5.0
 
 CC=		gcc
 CXX=		g++
@@ -46,7 +46,7 @@ PGO_PROF_GEN_FLAG=-fprofile-instr-generate
 PGO_PROF_USE_FLAG=-fprofile-instr-use=code.profclangd
 LLVM_PROF_MERGER=llvm-profdata merge -output=code.profclangd *.profclangr
 LLVM_PROF_FILE=LLVM_PROFILE_FILE="code-%p.profclangr"
-LLVM_PROF_ERR=yes
+LLVM_PROF_ERR=no
 
 GNULD=          no
 
@@ -203,7 +203,7 @@ BUILDPYTHON=	python$(BUILDEXE)
 cross_compiling=no
 PYTHON_FOR_BUILD=./$(BUILDPYTHON) -E
 _PYTHON_HOST_PLATFORM=
-HOST_GNU_TYPE=  x86_64-apple-darwin16.1.0
+HOST_GNU_TYPE=  x86_64-apple-darwin16.5.0
 
 # Tcl and Tk config info from --with-tcltk-includes and -libs options
 TCLTK_INCLUDES=	
