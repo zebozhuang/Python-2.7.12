@@ -1,0 +1,5 @@
+*.pyc
+*.o
+*.pyo
+./Makefile
+./Makefile.pre
