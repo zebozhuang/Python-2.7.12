@@ -6,7 +6,7 @@ extern "C" {
 
 
 /* Interface to map C struct members to Python object attributes */
-
+/* 获取Python属性的C API接口 */
 #include <stddef.h> /* For offsetof */
 
 /* The offsetof() macro calculates the offset of a structure member

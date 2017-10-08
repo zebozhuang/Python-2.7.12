@@ -433,7 +433,7 @@ Copyright (C) 2012 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/Users/zhuangzebo/Downloads/Python-2.7.12'
+ac_pwd='/Users/zhuangzebo/Documents/Python-2.7.12'
 srcdir='.'
 INSTALL='/usr/bin/install -c'
 MKDIR_P='./install-sh -c -d'
@@ -651,8 +651,8 @@ S["SO"]=".so"
 S["LIBTOOL_CRUFT"]=" -lSystem -lSystemStubs -arch_only x86_64 -install_name $(PYTHONFRAMEWORKINSTALLDIR)/Versions/$(VERSION)/$(PYTHONFRAMEWORK) -compatibility_version $"\
 "(VERSION) -current_version $(VERSION)"
 S["OTHER_LIBTOOL_OPT"]=""
-S["LLVM_PROF_FOUND"]="not-found"
-S["LLVM_PROF_ERR"]="yes"
+S["LLVM_PROF_FOUND"]="found"
+S["LLVM_PROF_ERR"]="no"
 S["LLVM_PROF_FILE"]="LLVM_PROFILE_FILE=\"code-%p.profclangr\""
 S["LLVM_PROF_MERGER"]="llvm-profdata merge -output=code.profclangd *.profclangr"
 S["PGO_PROF_USE_FLAG"]="-fprofile-instr-use=code.profclangd"
@@ -726,14 +726,14 @@ S["CONFIG_ARGS"]=" '--prefix=/Users/zhuangzebo/python2.7'"
 S["SOVERSION"]="1.0"
 S["VERSION"]="2.7"
 S["PYTHON_FOR_BUILD"]="./$(BUILDPYTHON) -E"
-S["host_os"]="darwin16.1.0"
+S["host_os"]="darwin16.5.0"
 S["host_vendor"]="apple"
 S["host_cpu"]="x86_64"
-S["host"]="x86_64-apple-darwin16.1.0"
-S["build_os"]="darwin16.1.0"
+S["host"]="x86_64-apple-darwin16.5.0"
+S["build_os"]="darwin16.5.0"
 S["build_vendor"]="apple"
 S["build_cpu"]="x86_64"
-S["build"]="x86_64-apple-darwin16.1.0"
+S["build"]="x86_64-apple-darwin16.5.0"
 S["cross_compiling"]="no"
 S["target_alias"]=""
 S["host_alias"]=""

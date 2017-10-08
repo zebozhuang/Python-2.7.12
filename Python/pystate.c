@@ -364,6 +364,7 @@ PyThreadState_Swap(PyThreadState *newts)
    PyThreadState_GetDict() returns NULL, an exception has *not* been raised
    and the caller should assume no per-thread state is available. */
 
+/* 可以保存每个线程的状态字典：这个是扩展机制, 这个用于GreenLet */
 PyObject *
 PyThreadState_GetDict(void)
 {

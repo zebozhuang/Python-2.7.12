@@ -770,6 +770,7 @@ type_call(PyTypeObject *type, PyObject *args, PyObject *kwds)
     return obj;
 }
 
+/* 分配内存并初始化, 返回对象的指针 */
 PyObject *
 PyType_GenericAlloc(PyTypeObject *type, Py_ssize_t nitems)
 {
